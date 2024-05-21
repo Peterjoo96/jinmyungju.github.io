@@ -34,18 +34,25 @@
             text-align: center;
 
         }
-
-        #toRecent {
-            width: 194px;
+        .nextPages:hover {
+            background-color: black;
+            color: white;
+        }
+        .nextPages:hover img {
+            display: block;
         }
 
-        #toCategory {
-            width: 240px;
+            #toRecent {
+                width: 194px;
             }
 
-        #toPortfolio {
-            width: 255px;
-        }
+            #toCategory {
+                width: 240px;
+                }
+
+            #toPortfolio {
+                width: 255px;
+            }
 
 
 
