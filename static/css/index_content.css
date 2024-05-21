@@ -46,15 +46,29 @@
             #toRecent {
                 width: 194px;
             }
+            #toRecent img {
+                top: calc(50% + 20px);
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
 
             #toCategory {
                 width: 240px;
-                }
+            }
+            #toCategory img {
+                top: calc(50% + 20px);
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
 
             #toPortfolio {
                 width: 255px;
             }
-
+            #toPortfolio img {
+                top: calc(50% + 20px);
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
 
 
 
