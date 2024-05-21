@@ -1,0 +1,121 @@
+
+
+#banner {
+    font-weight: bold;
+}
+
+#topbanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: calc(100%-250px);
+    height: 300px;
+    border: 3px solid black;
+    margin-top: 0px;
+    margin-left: 250px;
+    
+    /* 
+    모든 페이지에 들어갈 상단배너(메뉴) 적용할 css 넣기 
+    */
+}
+
+    #bannerMessage {
+        margin-left: 60px;
+    }
+
+    /*
+    topbanner에 추가할 거
+    
+    - 배경화면
+    - 검색창 (우측 최하단)
+    */
+
+
+/* topbanner fin*/
+
+#sidebanner {
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    border: 3px solid black;
+    position: fixed;
+    margin-top: 0px;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto; /* 세로 스크롤이 필요한 경우에만 스크롤이 나타납니다.*/
+    overflow-x: hidden; /* 가로 스크롤바를 숨깁니다. */
+    
+    /* 
+    모든 페이지에 들어갈 사이드배너(indexLinks)에 적용할 css 넣기
+    position: fixed;
+    */
+}
+
+    #introduce {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        width: 100%;
+        height: 450px;
+        margin-top: 0;
+    }
+
+        #selfie {
+            display: flex;
+            justify-content: center; /* 가로중앙 */
+            align-items: center; /* 세로중앙 */
+
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+            border-radius: 85px;
+            overflow: hidden; /*div태그 바깥의 이미지 숨김처리*/
+            
+        }
+
+        #author {
+            display: flex;
+            align-items: flex-start;
+
+            margin-right: 80px;
+        }
+
+        #breifIntro {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            height: 80px;
+        }
+    
+    #links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        width: 100%;
+        height: 100px;
+    }
+
+    /*
+    sidebanner에 추가할 거
+    
+    - (선택) 방문자 수 표시 
+        ex) 오늘 방문자 수 | 총 방문자 수
+    - 전체 글 개수 표시
+    - 각 컨텐츠 별 인덱스 표시 -> 아코디언으로 하위 카테고리 표시
+    */
+
+
+
+/* sidebanner fin*/
+
+
