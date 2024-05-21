@@ -27,6 +27,7 @@
             
             height: 54px;
             border: 6px solid black;
+            border-radius: 15px;
             padding: 0;
 
             font-weight: bolder;
