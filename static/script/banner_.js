@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // click_events : index -> otherPages
+    // click_events : banner -> otherPages
     document.getElementById('toGithub').addEventListener('click', function() {
         window.location.href = 'github.html';
     });
