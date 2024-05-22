@@ -14,7 +14,11 @@
     margin-top: 0px;
     margin-left: 250px;
     
-    /* 
+    background-image: url('static/img/topbanner_img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*
     모든 페이지에 들어갈 상단배너(메뉴) 적용할 css 넣기 
     */
 }
