@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - 글 목록</title>
+    <link rel="stylesheet" href="board_styles.css">
+</head>
+<body>
+    <h1>글 목록</h1>
+    <div>
+        <label for="main-category">대분류 카테고리:</label>
+        <select id="main-category" onchange="filterPosts()">
+            <option value="">전체</option>
+            <option value="개발">개발</option>
+            <option value="지식">지식</option>
+        </select>
+        <label for="sub-category">소분류 카테고리:</label>
+        <select id="sub-category" onchange="filterPosts()">
+            <option value="">전체</option>
+        </select>
+    </div>
+    <div id="post-list"></div>
+    <button onclick="window.location.href='board_write.html'">글 쓰기</button>
+</body>
+<script src="board_script.js"></script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - 글 쓰기</title>
+    <link rel="stylesheet" href="board_styles.css">
+</head>
+<body>
+    <h1>글 쓰기</h1>
+    <form id="write-form" onsubmit="submitPost(event)">
+        <label for="title">제목:</label>
+        <input type="text" id="title" required><br>
+        
+        <label for="main-category">대분류 카테고리:</label>
+        <select id="main-category" required onchange="updateSubCategory()">
+            <option value="">선택하세요</option>
+            <option value="개발">개발</option>
+            <option value="지식">지식</option>
+        </select><br>
+        
+        <label for="sub-category">소분류 카테고리:</label>
+        <select id="sub-category" required>
+            <option value="">선택하세요</option>
+        </select><br>
+
+        <label for="content">내용:</label>
+        <textarea id="content" required></textarea><br>
+        
+        <button type="submit">완료</button>
+        <button type="button" onclick="window.location.href='board_list.html'">취소</button>
+    </form>
+</body>
+<script src="board_script.js"></script>
+</html>
