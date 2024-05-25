@@ -71,5 +71,23 @@
             }
 
 
+            .triangle-div {
+                display: none;
+                position: absolute;
+                top: 100%; /* hover-div 바로 아래에 배치 */
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 50px solid lightblue;
+            }
+            
+            /* hover 효과 설정 */
+            .hover-div:hover + .triangle-div {
+                display: block;
+            }
+
 
 /* content fin*/
